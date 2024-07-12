@@ -1,0 +1,837 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* styling for hero section */ /* styling for hero section */
+
+/* styling for hero section */ /* styling for hero section */
+
+.hero-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+  padding-top: 20px;
+  margin-top: 100px;
+}
+.hero-text-container {
+  width: 46%;
+}
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0;
+
+  transition: opacity 0.5s, transform 0.5s;
+  z-index: 1000;
+}
+
+.toast.sshow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.success {
+  background-color: green;
+}
+
+.toast.error {
+  background-color: red;
+}
+
+.award {
+  color: #ff3147;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Cormorant SC", serif;
+  margin-bottom: 39px;
+}
+.title {
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+  width: 814px;
+  margin-bottom: 50px;
+  font-size: 60px;
+}
+.description {
+  font-family: "Poppins", sans-serif;
+  color: #6d6d6d;
+  margin-bottom: 60px;
+}
+#contactUsBtn {
+  width: 160px;
+  height: 50px;
+  background-color: #ff3147;
+  border-radius: 2px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+#contactUsBtn:hover {
+  background-color: #fa6070;
+  cursor: pointer;
+}
+
+.hero-image {
+  background-image: url("./assets/hero-girl.png");
+  width: 487px;
+  height: 737px;
+}
+
+/* styling for  Modal (initially hidden) section */ /* styling for   Modal (initially hidden) section */
+
+/* styling for   Modal (initially hidden) section */ /* styling for   Modal (initially hidden) section */
+
+/* styling for   Modal (initially hidden) section */ /* styling for   Modal (initially hidden) section */
+
+/* .modal {
+  display: none;
+  position: absolute;
+  z-index: 1111111111111111111111111;
+  width: 450px;
+  
+  height: 362px;
+  overflow: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  padding: 32px 32px 32px 25px;
+  overflow: hidden;
+  
+} */
+
+.modal {
+  position: absolute;
+  z-index: 1111111111111111111111111;
+  width: 450px;
+  height: 362px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  padding: 32px 32px 32px 25px;
+  overflow: hidden;
+
+  /* Animation properties */
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+/* When the modal is displayed */
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+
+
+/* Styling the form section */ /* Styling the form section */
+
+/* Styling the form section */ /* Styling the form section */
+
+/* Styling the form section */ /* Styling the form section */
+
+.form {
+  overflow: hidden;
+}
+
+.formtitle {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #2d3142;
+  margin-bottom: 32px;
+}
+.email {
+  color: #6f718f99;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #6f718f99;
+  width: 386px;
+  outline: none;
+  margin-bottom: 50px;
+}
+.Firstname {
+  width: 178px;
+  height: 27px;
+  color: #6f718f99;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #6f718f99;
+  outline: none;
+  margin-bottom: 40px;
+  margin-right: 30px;
+}
+.Lastname {
+  width: 178px;
+  height: 27px;
+  color: #6f718f99;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #6f718f99;
+  outline: none;
+  margin-bottom: 40px;
+}
+.iagree {
+  color: #616678;
+  opacity: 0.9;
+  font-size: 14px;
+}
+.formContactUsBtn {
+  margin-top: 22px;
+
+  width: 386px;
+  height: 52px;
+  background-color: #ff3366;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+.formContactUsBtn:hover {
+  background-color: #fa6070;
+  cursor: pointer;
+}
+
+.success-message, .error-message {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success-message {
+  color: green;
+  border: 1px solid green;
+}
+
+.error-message {
+  color: red;
+  border: 1px solid red;
+}
+/* 2nd page styling here */ /* 2nd page styling here */
+
+/* 2nd page styling here */ /* 2nd page styling here */
+
+.page2wrapper {
+  background-color: #fafafa;
+  height: 150vh;
+  display: flex;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+.headings {
+  width: 85vw;
+  font-family: Cormorant SC;
+  margin-top: 100px;
+}
+
+.slider-container {
+  margin-top: 60px;
+  overflow: hidden;
+  
+
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%); /* Move by half of the slider width */
+  }
+}
+
+.slider:hover{
+  animation-play-state: paused; 
+}
+
+.whatwedo {
+  color: #ff3147;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Cormorant SC", serif;
+  margin-bottom: 40px;
+}
+
+.holdingtitle-para {
+  display: flex;
+  width: 100%;
+}
+
+.headings-title {
+  font-size: 45px;
+  width: 407px;
+  font-weight: 700;
+  font-family: "Cormorant SC", serif;
+   font: normal normal bold 45px/65px 'Cormorant SC'; 
+  line-height: 2.4rem;
+  margin-right: 3.5rem;
+}
+
+.headings-para {
+  font-family: "Poppins", sans-serif;
+  color: #6d6d6d;
+  margin-bottom: 60px;
+  width: 38rem;
+}
+
+.slider {
+  width: 85vw;
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+  position: relative;
+  animation: slide 6s linear infinite;
+}
+
+.slider img {
+  width: 370px;
+  height: 526px;
+  transition: opacity 0.3s ease;
+}
+
+.dots {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-container1, .image-container2, .image-container3 {
+  position: relative;
+}
+
+
+.detailsOnHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 526px;
+  background-color: #ff3147;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.detailsImg {
+  width: 57px;
+  height: 57px;
+}
+
+.detailH1 {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Cormorant SC", serif;
+}
+
+.detailsOnHover p {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 14px;
+}
+
+.detailsOnHover a {
+  width: 185px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #ff3147;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.image-container1:hover .detailsOnHover,
+.image-container2:hover .detailsOnHover,
+.image-container3:hover .detailsOnHover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-container1:hover #img1,
+.image-container2:hover #img2,
+.image-container3:hover #img3 {
+  opacity: 0;
+}
+
+
+
+
+/* 3rd page styling here */ /* 3rd page styling here */
+
+/* 3rd page styling here */ /* 3rd page styling here */
+
+.page3wrapper {
+  /* height: 100vh; */
+  margin-top: 100px;
+}
+.headingspage3 {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose {
+  color: #ff3147;
+  font-size: 24px;
+  font-weight: 600;
+
+  font-family: "Cormorant SC", serif;
+}
+
+.titlepage3 {
+  font-size: 45px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Cormorant SC", serif;
+}
+.card {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  width: 256px;
+}
+.card h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+.card p {
+  font-family: "Poppins", sans-serif;
+
+  color: #000000;
+}
+.cards {
+  display: flex;
+  gap: 49px;
+  justify-content: center;
+  margin-top: 65px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+/* Our project section styling  */ /* Our project section styling  */
+
+.projectsHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.projectsHeading span {
+  color: #ff3147;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Cormorant SC", serif;
+}
+
+.projectsHeading h1 {
+  font-size: 45px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Cormorant SC", serif;
+}
+.productImagesAndCards {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+.projectcard {
+  width: 370px;
+  height: 189px;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.projectcard h1 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.projectcard p {
+  width: 293px;
+  font-family: "Poppins", sans-serif;
+}
+.projectimg {
+  transition: opacity 0.3s ease;
+  width: 770px;
+  height: 567px;
+}
+.active-card {
+  transition: background-color 0.3s ease;
+}
+/* 4th page styling here */ /* 4th page styling here */
+
+/* 4th page styling here */ /* 4th page styling here */
+.page4wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+.page4headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+.page4headings span {
+  color: #ff3147;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Cormorant SC", serif;
+}
+
+.page4headings h1 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Cormorant SC", serif;
+  color: #000000;
+}
+.page4Cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+.page4card {
+  width: 270px;
+  height: 233px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.page4card h1 {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.page4card span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.page4card:hover {
+  box-shadow: 3px 6px 20px #672c2c1f;
+}
+
+/* 5th page styling here */ /* 5th page styling here */
+
+/* 5th page styling here */ /* 5th page styling here */
+/* .page5wrapper{
+    margin-top: 60px;
+    border: 2px solid black;
+} */
+.page5headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 100px;
+  margin-bottom: 76px;
+}
+.page5headings h1 {
+  color: #ff3147;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Cormorant SC", serif;
+}
+
+.page5headings span {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Cormorant SC", serif;
+  color: #000000;
+}
+.para {
+  display: flex;
+  justify-content: center;
+}
+.innerdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container {
+  width: 831px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 10000;
+}
+.flexline {
+  color: #ff3147;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: flex-start;
+  text-align: left;
+  display: flex;
+}
+.grrey {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #808080;
+}
+#overlapimg {
+  position: absolute;
+  left: -1.1rem;
+  top: -1rem;
+  width: 64px;
+  height: 45px;
+}
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#bar {
+  width: 100%;
+  height: 310px;
+}
+#icons {
+  position: absolute;
+  width: 1170px;
+}
+
+/* Media queries responsive sections */ /* Media queries responsive sections */
+
+/* Media queries responsive sections */ /* Media queries responsive sections */
+
+@media (max-width: 1260px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text-container {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+  }
+  .description {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .slider {
+    width: 85vw;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+  #img2,
+  #img3 {
+    display: none;
+  }
+  #img1 {
+    width: 100%;
+    object-fit: cover;
+  }
+  .productImagesAndCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page4Cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  #bar {
+    width: 100%;
+    height: auto;
+  }
+  #icons {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 843px) {
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+  .flexline {
+    text-align: center;
+    justify-content: center;
+  }
+  .slider{
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .page2wrapper {
+    padding: 100px 0;
+    padding-bottom: 150px;
+    height: 140vh;
+  }
+  .holdingtitle-para {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .headings-para {
+    text-align: center;
+  }
+  .headings-title {
+    width: 100%;
+    text-align: center;
+  }
+  .page3wrapper {
+    padding: 150px 0;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .titlepage3 {
+    font-size: 35px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 737px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .title {
+    font-size: 40px;
+  }
+
+  .Firstname,
+  .Lastname {
+    width: 100%;
+  }
+
+  .slider {
+    width: 85vw;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+  #img2,
+  #img3 {
+    display: none;
+  }
+  .headings-title {
+    font-size: 28px;
+  }
+  .headings-para {
+    width: auto;
+  }
+  .whatwedo {
+    text-align: center;
+  }
+  #projectimg {
+    width: 416px;
+    height: 567px;
+  }
+  .projectsHeading {
+    text-align: center;
+  }
+  .page3wrapper {
+    margin-top: 0px;
+  }
+  .flexline {
+    flex-direction: column;
+  }
+  .page5headings {
+    padding-top: 0;
+  }
+  .page3wrapper {
+    padding-bottom: 100px;
+  }
+  .page4headings h1{
+    text-align: center;
+  }
+  .container{
+    padding: 0 12px;
+  }
+  #overlapimg{
+    left: 0.3rem;
+  }
+  .page5headings{
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 485px) {
+  .hero-image {
+    width: 350px;
+    height: 737px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .formContactUsBtn {
+    width: 60%;
+  }
+  .modal {
+    height: 467px;
+    top: 0;
+    width: 333px;
+  }
+  .page5headings {
+    text-align: center;
+  }
+}
