@@ -1,7 +1,4 @@
 
-**Important Note:** If you are checking the website on the browser's inspect mode and then making it responsive, please reload the page once. One of the images changes its size on reload because the media queries were not working on it for some reason.
-
-
 
 # Fyle Web Developer Assignment
 
@@ -9,7 +6,7 @@ This repository contains the code for the homepage of a small website, developed
 
 ## Description
 
-The assignment required the creation of a website homepage with various animations, functionalities, and user interactions. The preferred tech stack was Bootstrap, JavaScript + jQuery, and Plain CSS.
+The assignment required the creation of a website homepage with various animations, functionalities, and user interactions. The preferred tech stack was html, JavaScript, and Plain CSS.
 
 ## Features
 
